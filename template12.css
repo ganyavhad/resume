@@ -1,0 +1,59 @@
+/* template12.css - ATS Centered Classic: centered header, Georgia serif, all-caps headings */
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { background: #f5f5f5; }
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 11pt;
+    line-height: 1.5;
+    color: #000;
+    padding: 32px 0;
+}
+.page {
+    width: 8.5in;
+    min-height: 11in;
+    margin: 0 auto;
+    background: #fff;
+    padding: 0.6in 0.75in;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+a { color: #000; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.header { text-align: center; margin-bottom: 14px; }
+.name { font-size: 24pt; font-weight: 700; letter-spacing: 1px; }
+.title { font-size: 12pt; font-style: italic; margin: 2px 0 6px; }
+.contact { font-size: 10pt; color: #222; }
+.contact .sep { margin: 0 6px; color: #888; }
+
+.section { margin-top: 14px; }
+.section-title {
+    font-size: 12pt;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    padding: 3px 0;
+    margin-bottom: 8px;
+}
+.summary-text { font-size: 11pt; text-align: justify; }
+
+.entry { margin-top: 9px; }
+.entry-header { display: flex; justify-content: space-between; align-items: baseline; }
+.entry-title { font-weight: 700; font-size: 11pt; }
+.entry-date { font-size: 10pt; font-style: italic; color: #333; }
+.entry-sub { display: flex; justify-content: space-between; font-size: 10.5pt; font-style: italic; color: #333; }
+.entry-details { margin: 4px 0 0 22px; }
+.entry-details li { font-size: 10.5pt; margin-bottom: 2px; }
+
+.skills-grid { display: block; }
+.skill-group { font-size: 10.5pt; margin-bottom: 3px; }
+.skill-label { font-weight: 700; }
+
+.languages { font-size: 10.5pt; text-align: center; }
+
+@media print {
+    body { background: #fff; padding: 0; }
+    .page { box-shadow: none; padding: 0.55in 0.7in; }
+}
